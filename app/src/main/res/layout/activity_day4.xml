@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_day4"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingTop="16dp"
+    tools:context="com.example.ariel.pemrogramanlanjut.Day4"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/bgspinner"
+        android:layout_margin="20dp">
+        <Spinner
+            android:id="@+id/simpleSpinner"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            />
+    </LinearLayout>
+
+    <GridView
+        android:layout_below="@+id/simpleSpinner"
+        android:id="@+id/gridview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:numColumns="2"/>
+
+</LinearLayout>
